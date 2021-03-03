@@ -21,6 +21,7 @@ __Parameters__
 | email      | email of the user. Errors out if email already registered.               |
 | first_name | first name of the user.                                                  |
 | last_name  | last name of the user.                                                   |
+| password   | password (optional)                                                      |
 
 **Request**
 
