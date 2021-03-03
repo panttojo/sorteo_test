@@ -87,17 +87,15 @@ GET /api/get_winner  (requires authentication)
 ```
 
 
-__Request__
-```json
+
+__Response__
+```
+Status: 200 Ok
+
 {
     "id": "1519641b-c18c-4ecd-ad5b-d72383436aef",
     "first_name": "",
     "last_name": "",
     "email": "adawdawd@adfawd.co"
 }
-```
-
-__Response__
-```
-Status: 200 Ok
 ```
