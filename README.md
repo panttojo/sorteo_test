@@ -100,3 +100,45 @@ Status: 200 Ok
     "email": "adawdawd@adfawd.co"
 }
 ```
+
+
+This an example of the email was sent
+```
+[2021-03-03 05:21:53,814: WARNING/ForkPoolWorker-2] Content-Type: multipart/alternative;
+ boundary="===============2022195741176726036=="
+MIME-Version: 1.0
+Subject: Reset your Password!
+From: panttojo@yandex.com
+To: user@random.com
+Date: Wed, 03 Mar 2021 05:21:53 -0000
+Message-ID: <161474891381.165984.1170073708844176654@panttojo>
+
+--===============2022195741176726036==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+You're receiving this email because you requested a password reset
+for your user account.
+
+Please go to the following page and choose a new password:
+
+http://localhost:8000/reset-password/OGNmMGVlN2MtYWJkMi00NDJmLWEzOTUtMjE5NTU2YmIzMjk1::aix5kh-06a8a4435d1d7343177806a46a142da5/
+
+Thanks for using our site!
+--===============2022195741176726036==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<p>You're receiving this email because you requested a password reset
+for your user account.</p>
+
+<p>Please go to the following page and choose a new password:
+<a href="http://localhost:8000/reset-password/OGNmMGVlN2MtYWJkMi00NDJmLWEzOTUtMjE5NTU2YmIzMjk1::aix5kh-06a8a4435d1d7343177806a46a142da5/">Reset Password</a>
+</p>
+
+<p>Thanks for using our site!</p>
+--===============2022195741176726036==--
+[2021-03-03 05:21:53,818: WARNING/ForkPoolWorker-2] -------------------------------------------------------------------------------
+```
