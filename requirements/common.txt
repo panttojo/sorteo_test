@@ -1,0 +1,56 @@
+# Core Stuff
+# -------------------------------------
+Django==3.1.4
+
+# Configuration
+# -------------------------------------
+argon2-cffi==20.1.0
+django-environ==0.4.5
+# For Django 3.x
+-e git+git://github.com/CuriousLearner/django-sites@upgrade-django-3.x#egg=django_sites
+python-dotenv==0.14.0
+django-cors-headers==3.5.0
+
+# Staticfiles
+# -------------------------------------
+whitenoise==5.2.0
+
+# Extensions
+# -------------------------------------
+pytz==2020.1
+
+# Models
+# -------------------------------------
+psycopg2-binary==2.8.6
+
+Pillow==8.0.1
+django-extensions==3.1.0
+
+# REST APIs
+# -------------------------------------
+djangorestframework==3.12.2
+django-rest-swagger==2.2.0
+
+# LOGGING
+# -------------------------------------
+django-log-request-id==1.6.0
+
+
+# Async Tasks
+# -------------------------------------
+celery[redis]==5.0.2
+
+# Auth Stuff
+# -------------------------------------
+PyJWT==1.7.1
+django-mail-templated==2.6.5
+
+# Generating DB Schema
+# --------------------------------------
+pydot==1.4.1
+pyparsing==2.4.7
+
+# Caching
+# -------------------------------------
+django-redis==4.12.1
+hiredis==1.1.0

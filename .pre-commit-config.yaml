@@ -1,0 +1,27 @@
+repos:
+  - repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v1.4.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: check-yaml
+        args: ['--unsafe']
+      - id: detect-private-key
+      - id: forbid-new-submodules
+      - id: check-json
+      - id: check-added-large-files
+        args: ['--maxkb=3000']
+      - id: flake8
+
+  - repo: git://github.com/CuriousLearner/pre-commit-python-sorter
+    rev: 5294cde9d51cff119af537e987c30c320e9fbe2f
+    hooks:
+      - id: python-import-sorter
+        args: ["--silent-overwrite"]
+
+  - repo: https://github.com/asottile/seed-isort-config
+    rev: v1.9.1
+    hooks:
+      - id: seed-isort-config

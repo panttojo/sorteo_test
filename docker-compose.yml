@@ -1,0 +1,22 @@
+version: "3.5"
+
+services:
+  # POSTGRES DB CANTAINER
+  talana_db:
+    container_name: talana_db
+    image: postgres:12.2-alpine
+    volumes:
+      - ./backups/:/var/backups/
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=talana
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=talana_db
+
+  # REDIS CONTAINER
+  redis:
+    container_name: talana_redis
+    image: redis:4.0.9
+    ports:
+      - "6379:6379"
